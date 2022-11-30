@@ -1,0 +1,69 @@
+.Tournamet_post_entry {
+  height: 100vh;
+  background-color: black;
+  overflow: auto;
+  padding: 17px;
+}
+
+.post_story_wrapper {
+  text-align: center;
+  margin-top: 20px;
+}
+.center_full_image {
+  margin: 40px 0;
+}
+.center_full_image img {
+  height: 340px;
+}
+.back_space_between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Aa_circle {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: #606060;
+  color: white;
+  margin: 8px;
+  text-align: center;
+  padding-top: 4px;
+}
+.Aa_circle2 {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: #606060;
+  color: white;
+  margin: 8px;
+  text-align: center;
+  padding-top: 4px;
+  padding-right: 4px;
+}
+.post_story_yellow_btn {
+  background: var(--followingbackground);
+  border-radius: 30px;
+  text-align: center;
+  padding: 18px 0;
+  margin: 0 4px;
+  color: var(--followingtextcolor);
+}
+
+@media screen and (max-width: 768px) {
+  .center_full_image {
+    width: 100%;
+  }
+  .center_pink_shape {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .center_full_image {
+    width: 100%;
+  }
+  .center_pink_shape {
+    width: 100%;
+  }
+}

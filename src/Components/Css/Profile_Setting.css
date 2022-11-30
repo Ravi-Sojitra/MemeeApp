@@ -1,0 +1,49 @@
+.Profile_Setting{
+    height: 100vh;
+    background-color: black;
+    overflow: auto;
+    padding: 10px;
+}
+.P_S{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px;
+    margin: 10px 0;
+}
+.P_Setting_1{
+    display: flex;
+    align-items: center;
+    /* margin-left: 10px; */
+}
+.P_Setting_1_1{
+    padding-left: 16px;
+    padding-top: 10px;
+    background: rgba(32, 30, 35, 1);
+    height: 48px;
+    width: 48px;
+    border-radius: 12px;
+}
+.P_Setting_1_2{
+    margin-left: 15px;
+}
+.P_Setting_1_2 h5{
+    margin: 0;
+    color: rgba(255, 255, 255, 1);
+    font-size: 15px;
+    font-weight: 700;
+}
+.P_Setting_1_2 h6{
+    margin: 0;
+    color: rgba(154, 154, 154, 1);
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 4px;
+}
+.P_Setting_2{
+    margin-right: 15px;
+}
+#psethr{
+    margin: 0;
+    border: 1px solid white;
+}

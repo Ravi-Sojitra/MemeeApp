@@ -1,0 +1,81 @@
+.onbordinglogo img {
+  height: 55px;
+}
+.onbordinglogo {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+.email {
+  background: var(--fgfgfgf);
+  display: flex;
+  padding: 15px;
+  border-radius: 25px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+}
+.email img {
+  height: 15px;
+  width: 15px;
+  margin-right: 10px;
+  /* background-color: var(--email_image_color); */
+}
+.email h4 {
+  font-size: 16px;
+  color: var(--emailtextcolor);
+  font-weight: 600;
+  margin: 0;
+}
+.email2 {
+  display: flex;
+  padding: 15px;
+  border-radius: 25px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(97, 97, 97, 1);
+  margin-top: 20px;
+}
+.email2 img {
+  height: 15px;
+  width: 15px;
+  margin-right: 10px;
+}
+.email2 h4 {
+  font-size: 14px;
+  color: white;
+  font-weight: 400;
+  margin: 0;
+}
+.email3 {
+  display: flex;
+  padding: 15px;
+  border-radius: 25px;
+  align-items: center;
+  border: 1px solid rgba(97, 97, 97, 1);
+  margin-top: 20px;
+  justify-content: center;
+}
+.email3 h4 {
+  font-size: 14px;
+  color: white;
+  font-weight: 400;
+  margin: 0;
+}
+.movesignup {
+  text-align: center;
+  margin-top: 110px;
+  width: 100%;
+}
+.movesignup h4 {
+  font-size: 15px;
+  color: rgba(136, 136, 136, 1);
+}
+.movesignup h4 span {
+  color: var(--sign_up_txt_color);
+}
+.movesignup p {
+  color: rgba(136, 136, 136, 1);
+  font-size: 12px;
+  margin: 0;
+}

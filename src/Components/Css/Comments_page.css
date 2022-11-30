@@ -1,0 +1,160 @@
+.main_Commments_page {
+  background-color: black;
+  height: 100vh;
+  overflow: scroll;
+}
+.CommentsArrow {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  width: 100%;
+  padding-left: 17px;
+}
+.CommentsArrow img {
+  height: 19px;
+  margin-right: 2%;
+}
+.CommentsArrow h3 {
+  font-size: 20px;
+  color: white;
+  margin: 0;
+  font-weight: 500;
+}
+.User_comments {
+  display: flex;
+  margin-top: 10px;
+}
+.cmd_User_img {
+  margin-top: 10px;
+}
+.comments {
+  margin-top: 10px;
+  margin-left: 10px;
+  overflow: scroll;
+}
+.comments::-webkit-scrollbar {
+  display: none;
+}
+.c_d_1 {
+  background: rgba(32, 30, 35, 1);
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 13px;
+  margin-left: 10px;
+}
+.c_d_1 h5 {
+  color: rgba(255, 255, 255, 1);
+  font-size: 13px;
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+.c_d_1 h6 {
+  color: rgba(193, 193, 193, 1);
+  font-size: 12px;
+  margin: 0;
+  margin-top: 5px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+.Comments_likes_share {
+  display: flex;
+  justify-content: space-around;
+}
+.Comments_likes_share h5 {
+  font-size: 12px;
+  color: rgba(193, 193, 193, 1);
+  font-weight: 300;
+  margin: 0;
+  margin-left: 25px;
+  margin-top: 10px;
+}
+.Comments_post {
+  display: flex;
+  align-items: center;
+  bottom: 2%;
+  left: 6%;
+  width: 100%;
+  padding: 0 15px;
+}
+.Comments_written_post {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.Comments_written_post h5 {
+  color: var(--sign_up_txt_color);
+  font-size: 15px;
+  font-weight: 400;
+  position: absolute;
+  right: 9%;
+  margin: 0;
+}
+.Comments_written_post input {
+  border-style: none;
+  background: #201e23;
+  border-radius: 18px;
+  width: 100%;
+  padding: 10px;
+  align-items: center;
+  caret-color: white;
+  margin-left: 7px;
+}
+.cmpst {
+  position: absolute;
+  width: 100%;
+  bottom: 4%;
+}
+
+/* media */
+
+@media screen and (max-width: 768px) {
+  .comments {
+    margin-top: 10px;
+    margin-left: 25px;
+  }
+  .CommentsArrow {
+    margin-top: 20px;
+  }
+  .User_comments {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .comments {
+    margin-top: 2%;
+    margin-left: 5%;
+  }
+  .CommentsArrow {
+    margin-top: 5%;
+  }
+  .User_comments {
+    margin-top: 5%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .comments {
+    margin-top: 15px;
+    margin-left: 17px;
+  }
+  .CommentsArrow {
+    margin-top: 20px;
+  }
+  .User_comments {
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .comments {
+    margin-top: 15px;
+    margin-left: 17px;
+  }
+  .CommentsArrow {
+    margin-top: 20px;
+  }
+  .User_comments {
+    margin-top: 15px;
+  }
+}

@@ -1,38 +1,302 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  outline: none;
+  user-select: none;
 }
-
-.App-logo {
-  height: 40vmin;
+*::-webkit-scrollbar {
+  display: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+input {
+  color: white;
+  font-weight: 300;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.error {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 20%;
+  left: 28%;
+  /* border-style: solid; */
+  padding: 20px;
+  border-radius: 20px;
+}
+.error img {
+  height: 23rem;
+}
+.error2 h1 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.error2 h2 {
+  color: red;
+  font-size: 40px;
+}
+.error2 h1 span {
+  color: green;
+  font-size: 25px;
+}
+#Yellow {
+  color: orangered;
+}
+.sliderofapp {
   pointer-events: none;
 }
+/* theme change */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.Default_theme_Navbar_color {
+  --Navbar_theme: #292929;
+  --Navbar_Background_shadow: 0px -10px 35px 5px rgba(0, 0, 0, 0.2);
+  --Navbar_font_color: rgb(49, 48, 43);
+  --btnofall: linear-gradient(180deg, #ffe299 0%, #f6b202 100%);
+  --exploretagitem1naturetext: #ffcd2f;
+  --entertournamentbackground: linear-gradient(
+    180deg,
+    #ffe299 0%,
+    #f6b202 100%
+  );
+  --btntextcolor: black;
+  --agreebackground: linear-gradient(180deg, #ffde88 0%, #ffb905 100%);
+  --followingbackground: linear-gradient(180deg, #ffe299 0%, #f6b202 100%);
+  --followingtextcolor: black;
+  --fgfgfgf: linear-gradient(180deg, #ffde88 0%, #ffb905 100%);
+  --sign_in_btn_txt_color: black;
+  --forgot_password_txt_color: rgba(255, 205, 47, 1);
+  --sign_up_txt_color: rgba(255, 205, 47, 1);
+  --profile_badge_background_color: rgba(41, 41, 41, 1);
+  --judge_day_num_of_memes: linear-gradient(180deg, #ffdf8d 0%, #f4b30e 100%);
+  --activityforactmess: linear-gradient(180deg, #ffdf8d 0%, #f4b30e 100%);
+  --sign_in_btn_color: linear-gradient(180deg, #ffdf8d 0%, #f4b30e 100%);
+}
+.Space_Theme_Navbar_color {
+  --Navbar_theme: linear-gradient(180deg, #5d33ad 0%, #171a59 100%);
+  --Navbar_Background_shadow: 0px -8.18667px 28.6533px 4.09334px rgba(0, 0, 0, 0.2);
+  --Navbar_font_color: #8577bf;
+  --btnofall: linear-gradient(180deg, #5d33ad 0%, #171a59 100%);
+  --entertournamentbackground: linear-gradient(
+    180deg,
+    #5d33ad 0%,
+    #171a59 100%
+  );
+  --activityforactmess: linear-gradient(180deg, #5d33ad 0%, #171a59 100%);
+  --todayfollowbackground: linear-gradient(180deg, #5d33ad 0%, #171a59 100%);
+  --btntextcolor: white;
+  --agreebackground: linear-gradient(180deg, #5d33ad 0%, #171a59 100%);
+  --followingbackground: linear-gradient(180deg, #5d33ad 0%, #111752 100%);
+  --followingtextcolor: white;
+  --fgfgfgf: linear-gradient(180deg, #5d33ad 0%, #171a59 100%),
+    linear-gradient(180deg, #ffe299 0%, #f6b202 100%);
+  --exploretagitem1naturetext: linear-gradient(
+    180deg,
+    #5d33ad 0%,
+    #171a59 100%
+  );
+  --emailtextcolor: white;
+  --email_image_color: white;
+  --sign_in_btn_color: linear-gradient(180deg, #5d33ad 0%, #171a59 100%),
+    linear-gradient(180deg, #ffe299 0%, #f6b202 100%);
+  --sign_in_btn_txt_color: white;
+  --forgot_password_txt_color: #a378f6;
+  --sign_up_txt_color: #a378f6;
+  --profile_badge_background_color: linear-gradient(
+    180deg,
+    #5d33ad 0%,
+    #111752 100%
+  );
+  --judge_day_num_of_memes: linear-gradient(180deg, #5d33ad 0%, #171a59 100%);
+}
+.Unicorn_Theme_Navbar_color {
+  --Navbar_theme: linear-gradient(180deg, #c83a6b 0%, #8d0e3a 100%);
+  --Navbar_Background_shadow: 0px -8.18667px 28.6533px 4.09333px rgba(0, 0, 0, 0.2);
+  --Navbar_font_color: #ee6293;
+  --btnofall: linear-gradient(180deg, #c83a6b 0%, #8d0e3a 100%);
+  --exploretagitem1naturetext: #ee6293;
+  --entertournamentbackground: linear-gradient(
+    180deg,
+    #c83a6b 0%,
+    #8d0e3a 100%
+  );
+  --btntextcolor: white;
+  --agreebackground: linear-gradient(180deg, #c83a6b 0%, #8d0e3a 100%);
+  --followingbackground: linear-gradient(180deg, #c83a6b 0%, #8d0e3a 100%);
+  --followingtextcolor: white;
+  --fgfgfgf: #c83a6b;
+  --sign_in_btn_txt_color: white;
+  --forgot_password_txt_color: #c83a6b;
+  --sign_up_txt_color: #c83a6b;
+  --profile_badge_background_color: linear-gradient(
+    180deg,
+    #c83a6b 0%,
+    #8d0e3a 100%
+  );
+  --judge_day_num_of_memes: linear-gradient(180deg, #c83a6b 0%, #8d0e3a 100%);
+  --sign_in_btn_color: linear-gradient(180deg, #c83a6b 0%, #8d0e3a 100%);
+  --activityforactmess: linear-gradient(180deg, #c83a6b 0%, #8d0e3a 100%);
+}
+.Memee_Theme_Navbar_color {
+  --Navbar_theme: linear-gradient(180deg, #ffd524 0%, #ecb602 100%);
+  --Navbar_Background_shadow: 0px -8.18667px 28.6533px 4.09333px rgba(0, 0, 0, 0.2);
+  --Navbar_font_color: black;
+  --btnofall: linear-gradient(180deg, #ffd524 0%, #ecb602 100%),
+    linear-gradient(180deg, #c83a6b 0%, #8d0e3a 100%);
+  --exploretagitem1naturetext: #black;
+  --entertournamentbackground: linear-gradient(180deg, #ffd524 0%, #ecb602 100%),
+    linear-gradient(180deg, #c83a6b 0%, #8d0e3a 100%);
+  --btntextcolor: black;
+  --agreebackground: linear-gradient(180deg, #ffd524 0%, #ecb602 100%),
+    linear-gradient(180deg, #c83a6b 0%, #8d0e3a 100%);
+  --followingbackground: linear-gradient(180deg, #ffd524 0%, #ecb602 100%),
+    linear-gradient(180deg, #c83a6b 0%, #8d0e3a 100%);
+  --followingtextcolor: black;
+  --fgfgfgf: linear-gradient(180deg, #ffd524 0%, #ecb602 100%);
+  --sign_in_btn_txt_color: black;
+  --forgot_password_txt_color: white;
+  --sign_up_txt_color: white;
+  --profile_badge_background_color: linear-gradient(
+      180deg,
+      #ffd524 0%,
+      #ecb602 100%
+    ),
+    linear-gradient(180deg, #c83a6b 0%, #8d0e3a 100%);
+  --judge_day_num_of_memes: linear-gradient(180deg, #ffd524 0%, #ecb602 100%),
+    linear-gradient(180deg, #c83a6b 0%, #8d0e3a 100%);
+  --sign_in_btn_color: linear-gradient(180deg, #ffd524 0%, #ecb602 100%),
+    linear-gradient(180deg, #c83a6b 0%, #8d0e3a 100%);
+  --activityforactmess: linear-gradient(180deg, #ffd524 0%, #ecb602 100%),
+    linear-gradient(180deg, #c83a6b 0%, #8d0e3a 100%);
+}
+.Save_Earth_Day_Theme_Navbar_color {
+  --Navbar_theme: linear-gradient(180deg, #78ac6b 0%, #49843a 100%);
+  --Navbar_Background_shadow: 0px -8.18667px 28.6533px 4.09333px rgba(0, 0, 0, 0.2);
+  --Navbar_font_color: #b1ccaa;
+  --btnofall: linear-gradient(180deg, #78ac6b 0%, #49843a 100%);
+  --btntextcolor: white;
+  --btnofall: linear-gradient(180deg, #78ac6b 0%, #49843a 100%);
+  --exploretagitem1naturetext: #ffcd2f;
+  --entertournamentbackground: linear-gradient(
+    180deg,
+    #ffe299 0%,
+    #f6b202 100%
+  );
+  --agreebackground: linear-gradient(180deg, #78ac6b 0%, #49843a 100%);
+  --followingbackground: linear-gradient(180deg, #78ac6b 0%, #49843a 100%);
+  --followingtextcolor: white;
+  --fgfgfgf: linear-gradient(180deg, #78ac6b 0%, #49843a 100%);
+  --sign_in_btn_txt_color: black;
+  --forgot_password_txt_color: linear-gradient(
+    180deg,
+    #78ac6b 0%,
+    #49843a 100%
+  );
+  --sign_up_txt_color: linear-gradient(180deg, #78ac6b 0%, #49843a 100%);
+  --profile_badge_background_color: linear-gradient(
+    180deg,
+    #78ac6b 0%,
+    #49843a 100%
+  );
+  --judge_day_num_of_memes: linear-gradient(180deg, #78ac6b 0%, #49843a 100%);
+  --activityforactmess: linear-gradient(180deg, #78ac6b 0%, #49843a 100%);
+}
+.New_Year_Theme_Navbar_color {
+  --Navbar_theme: #413781;
+  --Navbar_Background_shadow: 0px -10px 35px 5px rgba(0, 0, 0, 0.2);
+  --Navbar_font_color: black;
+  --btnofall: #413781;
+  --btntextcolor: white;
+  --btnofall: #413781;
+  --exploretagitem1naturetext: #413781;
+  --entertournamentbackground: #413781;
+  --agreebackground: #413781;
+  --followingbackground: #413781;
+  --followingtextcolor: white;
+  --fgfgfgf: #413781;
+  --sign_in_btn_txt_color: white;
+  --forgot_password_txt_color: #958ec0;
+  --sign_up_txt_color: #413781;
+  --profile_badge_background_color: #413781;
+  --judge_day_num_of_memes: #413781;
+  --activityforactmess: #413781;
+  --emailtextcolor: white;
+  --sign_in_btn_color: #413781;
+}
+/* BUTTONS THEME */
+.Default_Button {
+  --Button_theme: #292929;
+}
+.Space_Button {
+  --Button_theme: linear-gradient(180deg, #5d33ad 0%, #171a59 100%);
+}
+.Unicorn_Button {
+  --Button_theme: linear-gradient(180deg, #c83a6b 0%, #8d0e3a 100%);
+}
+.Memee_Button {
+  --Button_theme: linear-gradient(180deg, #ffd524 0%, #ecb602 100%),
+    linear-gradient(180deg, #c83a6b 0%, #8d0e3a 100%);
+}
+.Save_Earth_Day_Button {
+  --Button_theme: linear-gradient(180deg, #78ac6b 0%, #49843a 100%);
+}
+.New_Year_Button {
+  --Button_theme: #413781;
+}
+
+/* media css */
+
+@media screen and (max-width: 10000px) {
+  .memee {
+    display: none;
+  }
+  .sliderofapp {
+    display: none;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 1440px) {
+  .memee {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .sliderofapp {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .memee {
+    display: none;
+  }
+  .sliderofapp {
+    display: none;
+  }
+  .error img {
+    height: 20rem;
+  }
+  .error {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 24%;
+    /* border-style: solid; */
+    padding: 20px;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .no_Conetent {
+    display: none;
+  }
+  .memee {
+    display: block;
+  }
+  .sliderofapp {
+    display: block;
   }
 }

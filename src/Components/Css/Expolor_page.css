@@ -1,0 +1,127 @@
+.Explore_page {
+  background-color: black;
+  height: 100vh;
+  overflow: scroll;
+}
+.Explore_page::-webkit-scrollbar {
+  display: none;
+}
+.Explore_name h2 {
+  color: white;
+  font-weight: 500;
+  font-size: 21px;
+  margin: 0;
+}
+.Search_explore {
+  width: 100%;
+  margin-top: 4px;
+  padding: 0 4.5%;
+}
+.Search_explore input {
+  width: 100%;
+  padding: 9px;
+  padding-left: 45px;
+  border-style: none;
+  border-radius: 17px;
+  background: rgba(32, 30, 35, 1);
+  caret-color: white;
+}
+.Search_explore input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+}
+.Search_explore img {
+  position: relative;
+  top: 32px;
+  left: 4.5%;
+}
+.Explore_tags h2 {
+  color: rgba(186, 186, 186, 1);
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  margin-left: 6%;
+  margin-top: 4%;
+}
+.Explore_tags_items {
+  margin-top: 3%;
+  padding-left: 6%;
+  display: flex;
+  width: 100%;
+  overflow: auto;
+}
+.Explore_tags_items::-webkit-scrollbar {
+  display: none;
+}
+.Explore_tags_items_1 {
+  padding: 10px 15px;
+  background: var(--exploretagitem1naturetext);
+  border-style: none;
+  border-radius: 20px;
+  margin-right: 2%;
+  color: var(--followingtextcolor);
+}
+.Explore_tags_items_1 h4 {
+  margin: 0;
+  font-size: 13px;
+}
+.Explore_tags_items_2 {
+  padding: 10px 15px;
+  border: 1px solid gray;
+  border-radius: 20px;
+  margin-right: 2%;
+}
+.Explore_tags_items_2 h4 {
+  margin: 0;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 400;
+}
+.user_post_explore_1 {
+  border-radius: 10px;
+  text-align: center;
+  /* width:100%; */
+  background-size: cover;
+  background-position: center center;
+  height: 170px;
+  margin-top: 15px;
+  max-height: 250px;
+}
+.user_explore_details {
+  display: flex;
+  margin-top: 10rem;
+}
+.user_post_explore_1_details {
+  background: url("../images/Home_page/Story_background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+}
+.user_post_explore_1_details h5 {
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  margin: 0;
+  margin-left: 7px;
+}
+.user_explor_post_details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 18px;
+  margin-top: 10px;
+}
+.user_post_explore {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 25px;
+  padding: 0 15px;
+  width: 100%;
+  margin-bottom: 86px;
+  height: 100%;
+  overflow: auto;
+}
